@@ -226,7 +226,7 @@ def apply_filters(postprocessed_masks, filters_path):
 
     # For each section heading in the config file
     for filter in config.sections():
-        if filter in ('csparc_input', 'input', 'general', 'output'):
+        if filter in ('csparc_input', 'input', 'general', 'output', 'io', 'segmentation', 'preprocessing', 'postprocessing', 'picking'):
             continue
         else:
             # Set filtered masks equal to a filtered mask list
