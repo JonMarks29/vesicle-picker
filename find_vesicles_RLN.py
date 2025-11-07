@@ -64,15 +64,15 @@ model = generate_masks.initialize_model(
 
 os.makedirs(output, exist_ok=True)
 
-# check for already process images
+# check for already processed images
 mics = []
 done = [] 
 for i in os.listdir(os.path.join(basedir,output)):
-    done.append(i[:47])
+    done.append(i[:-9])
 
 # find all motioncorr mics
 for i in os.listdir(os.path.join(basedir, motion)):
-    if "PS" not in i and ".mrc" in i and i[:47] not in done:
+    if "PS" not in i and ".mrc" in i and os.path.splitext(i)[0] not in done:
         mics.append(i)
 
 # only do as many micrographs as requested
