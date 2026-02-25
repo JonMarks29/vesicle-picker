@@ -1,6 +1,6 @@
 ![Vesicle Picker banner.png](docs/vesicle_picker_banner_withtext.png)
 
-Modified version of Vesicle-Picker (https://github.com/r-karimi/vesicle-picker) to facilitate easy integration with relion. Handles Relion-style preprocessed data and writes out manualpick files for inspection/extraction
+Modified version of Vesicle-Picker (https://github.com/r-karimi/vesicle-picker) to facilitate easy integration with RELION. Handles Relion-style preprocessed data and writes out manualpick files for inspection/extraction.
 
 ## Installation ##
 
