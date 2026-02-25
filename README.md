@@ -1,5 +1,7 @@
 ![Vesicle Picker banner.png](docs/vesicle_picker_banner_withtext.png)
 
+Modified version of Vesicle-Picker (https://github.com/r-karimi/vesicle-picker) to facilitate easy integration with relion. Handles Relion-style preprocessed data and writes out manualpick files for inspection/extraction
+
 ## Installation ##
 
 1. Ensure [Git](https://github.com/git-guides/install-git) and [Anaconda](https://www.anaconda.com/download) (or [Miniconda](https://docs.anaconda.com/miniconda/)) are installed on your computer.  
