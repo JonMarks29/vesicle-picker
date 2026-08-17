@@ -3,6 +3,26 @@
 Modified version of Vesicle-Picker (https://github.com/r-karimi/vesicle-picker) to facilitate easy integration with RELION. Handles Relion-style preprocessed data and writes out manualpick files for inspection/extraction.
 Also allows merging of parameter files into a single combined parameter set 
 
+Usage is similar to the original version, where vesicle_picker_combined.ini is the combined parameters file :
+# find_vesicles
+```
+python3 find_vesicles_RLN.py vesicle_picker_combined.ini
+```
+# filter vesicles
+```
+python3 filter_vesicles_RLN.py vesicle_picker_combined.ini
+```
+# display segmentation maps
+```
+python3 display_vesicles_RLN.py  vesicle_picker_combined.ini --n 10
+```
+
+#generate_picks
+```
+python3 generate_picks_RLN.py  vesicle_picker_combined.ini --mode surface
+python3 generate_picks_RLN.py  vesicle_picker_combined.ini --mode edge
+```
+
 ## Installation ##
 
 1. Ensure [Git](https://github.com/git-guides/install-git) and [Anaconda](https://www.anaconda.com/download) (or [Miniconda](https://docs.anaconda.com/miniconda/)) are installed on your computer.  
