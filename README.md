@@ -1,23 +1,23 @@
 ![Vesicle Picker banner.png](docs/vesicle_picker_banner_withtext.png)
 
 Modified version of Vesicle-Picker (https://github.com/r-karimi/vesicle-picker) to facilitate easy integration with RELION. Handles Relion-style preprocessed data and writes out manualpick files for inspection/extraction.
-Also allows merging of parameter files into a single combined parameter set 
+Also allows merging of parameter files into a single combined parameter set (e.g. the file sample_combined_parameters.ini)
 
 Usage is similar to the original version, where vesicle_picker_combined.ini is the combined parameters file :
-# find_vesicles
+1. Find vesicles
 ```
 python3 find_vesicles_RLN.py vesicle_picker_combined.ini
 ```
-# filter vesicles
+2. Filter vesicles
 ```
 python3 filter_vesicles_RLN.py vesicle_picker_combined.ini
 ```
-# display segmentation maps
+3. Display segmentation maps - creates plots of micrographs with and without the filtered segmentation
 ```
 python3 display_vesicles_RLN.py  vesicle_picker_combined.ini --n 10
 ```
 
-#generate_picks
+4. Generate picks - outputs as relion format manualpick files
 ```
 python3 generate_picks_RLN.py  vesicle_picker_combined.ini --mode surface
 python3 generate_picks_RLN.py  vesicle_picker_combined.ini --mode edge
